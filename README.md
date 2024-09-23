@@ -32,7 +32,7 @@ No modules.
 | <a name="input_policy"></a> [policy](#input\_policy) | The CloudFormation template policy | `string` | `null` | no |
 | <a name="input_policy_template"></a> [policy\_template](#input\_policy\_template) | Path to a template file for the CloudFormation policy | `string` | `null` | no |
 | <a name="input_region"></a> [region](#input\_region) | The region where the CloudFormation stack will be deployed | `string` | `null` | no |
-| <a name="input_regions"></a> [regions](#input\_regions) | The regions where the template will be deployed | `set(string)` | n/a | yes |
+| <a name="input_regions"></a> [regions](#input\_regions) | The regions where the template will be deployed. Use ['*'] for all regions. | `set(string)` | <pre>[<br>  "*"<br>]</pre> | no |
 | <a name="input_sns_arns"></a> [sns\_arns](#input\_sns\_arns) | SNS ARNs for stack notifications | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Stack-level tags that will apply to all supported resources in the CloudFormation stack | `map(string)` | `{}` | no |
 | <a name="input_template_parameters"></a> [template\_parameters](#input\_template\_parameters) | Parameters for the CloudFormation template | `string` | `null` | no |

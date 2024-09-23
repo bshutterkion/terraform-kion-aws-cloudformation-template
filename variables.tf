@@ -4,8 +4,9 @@ variable "name" {
 }
 
 variable "regions" {
-  description = "The regions where the template will be deployed"
+  description = "The regions where the template will be deployed. Use ['*'] for all regions."
   type        = set(string)
+  default     = ["*"]
 }
 
 variable "owner_users" {

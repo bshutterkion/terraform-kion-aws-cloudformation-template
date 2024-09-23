@@ -1,6 +1,6 @@
 resource "kion_aws_cloudformation_template" "this" {
   name    = var.name
-  regions = var.regions
+  regions = contains(var.regions, "*") ? [] : var.regions # Empty list means all regions in Kion
 
   dynamic "owner_users" {
     for_each = var.owner_users
